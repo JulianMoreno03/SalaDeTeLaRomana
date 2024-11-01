@@ -1,0 +1,28 @@
+---
+import { Image } from "astro:assets";
+import imgBackground from "../../public/imgFondo.webp";
+---
+
+<section class="relative w-full h-screen overflow-hidden">
+
+    <Image
+        src={imgBackground}
+        decoding="async"
+        loading="lazy"
+        alt="Foto de la decoracion del lugar."
+        class="absolute top-0 left-0 object-cover bg-cover"
+    />
+    <article class="absolute w-full h-screen flex justify-start items-center md:pl-40">
+        <div class="flex flex-col justify-evenly items-center gap-5 
+        bg-white bg-opacity-20 backdrop-blur-xl md:w-96 md:h-64 rounded-xl p-5">
+
+            <p class="text-center w-[250px] text-xl text-orange-900 font-bold ">
+                QUE TU FIESTA SEA
+                <span class=" text-4xl ">INOLVIDABLE</span>
+            </p>
+            <p class="text-center text-xl w-[250px] text-orange-950 font-bold">El lugar perfecto para esa fiesta soñada</p>
+            <button class="bg-orange-900 px-6 py-2 font-bold text-white rounded-xl">CONTACTANOS</button>
+        </div>
+    </article>
+    
+</section>
