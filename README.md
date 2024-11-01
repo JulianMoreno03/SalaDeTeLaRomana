@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# SalaDeTeLaRomana
-=======
+
 # Astro Starter Kit: Basics
 
 ```sh
