@@ -4,25 +4,32 @@ import imgBackground from "../../public/imgFondo.webp";
 ---
 
 <section class="relative w-full h-screen overflow-hidden">
-
     <Image
         src={imgBackground}
         decoding="async"
         loading="lazy"
-        alt="Foto de la decoracion del lugar."
-        class="absolute top-0 left-0 object-cover bg-cover"
+        alt="Foto de la decoración del lugar."
+        class="absolute top-0 left-0 object-cover bg-cover "
     />
-    <article class="absolute w-full h-screen flex justify-start items-center md:pl-40">
-        <div class="flex flex-col justify-evenly items-center gap-5 
-        bg-white bg-opacity-20 backdrop-blur-xl md:w-96 md:h-64 rounded-xl p-5">
 
-            <p class="text-center w-[250px] text-xl text-orange-900 font-bold ">
+    <article
+        class="absolute md:w-full md:h-screen flex justify-start items-center pl-10 p-10  w-40 md:pl-32"
+    >
+        <div
+            class="flex flex-col justify-center items-center md:gap-6 gap-3
+        bg-white bg-opacity-20 backdrop-blur-xl md:w-96 md:h-64 h-52 rounded-xl md:p-5"
+        >
+            <p class="text-center w-[250px] text-sm md:text-xl  text-orange-900 font-bold">
                 QUE TU FIESTA SEA
-                <span class=" text-4xl ">INOLVIDABLE</span>
+                <span class="text-2xl md:text-4xl">INOLVIDABLE</span>
             </p>
-            <p class="text-center text-xl w-[250px] text-orange-950 font-bold">El lugar perfecto para esa fiesta soñada</p>
-            <button class="bg-orange-900 px-6 py-2 font-bold text-white rounded-xl">CONTACTANOS</button>
+            <p class="text-center text-lg md:text-xl w-48 md:w-[220px]  text-orange-950 font-bold">
+                El lugar perfecto para esa fiesta soñada
+            </p>
+            <button
+                class="bg-orange-900 px-3 py-1 md:px-6 md:py-2 font-bold text-white rounded-xl hover:bg-orange-800 duration-300"
+                >CONTACTANOS</button
+            >
         </div>
     </article>
-    
 </section>
