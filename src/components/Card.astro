@@ -1,21 +1,19 @@
 ---
+
+import { Icon } from 'astro-icon/components'
+
 interface Props {
-	title: string;
-	body: string;
-	href: string;
+  bgColor: string;
+  icon: string;
+  title: string;
+  text: string;
 }
 
-const { href, title, body } = Astro.props;
+const { bgColor, icon, title, text } = Astro.props;
 ---
 
-<li class="link-card">
-	<a href={href}>
-		<h2>
-			{title}
-			<span>&rarr;</span>
-		</h2>
-		<p>
-			{body}
-		</p>
-	</a>
-</li>
+<div class={`flex flex-col items-start gap-4 w-72 px-10 py-10 border shadow-xl rounded-xl ${bgColor} text-gray-800`}>
+    <Icon name={icon} class="w-8 h-8" />
+    <h3 class="text-xl font-bold">{title}</h3>
+    <p>{text}</p>
+</div>
