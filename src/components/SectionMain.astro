@@ -1,6 +1,8 @@
 ---
 import { Image } from "astro:assets";
 import imgBackground from "../../public/imgFondo.webp";
+import { Icon } from 'astro-icon/components'
+
 ---
 
 <section class="relative w-full md:h-screen h-80 overflow-hidden">
@@ -27,9 +29,11 @@ import imgBackground from "../../public/imgFondo.webp";
                 El lugar perfecto para esa fiesta soñada
             </p>
             <button
-                class="bg-orange-900 px-3 py-1 md:px-6 md:py-2 font-bold text-white rounded-xl hover:bg-orange-800 duration-300"
-                >CONTACTANOS</button
-            >
+                class="flex  bg-orange-900 px-3 py-1 md:px-6 md:py-3 font-bold text-white rounded-xl hover:bg-orange-800 duration-300"
+                >CONTACTANOS
+                <Icon name="contacto" class='ml-3 w-8 h-6'/>
+            </button>
+                
         </div>
     </article>
 </section>

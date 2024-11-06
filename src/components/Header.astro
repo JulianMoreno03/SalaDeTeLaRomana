@@ -1,16 +1,20 @@
+---
+import { Icon } from 'astro-icon/components'
 
+---
 <header class="md:flex md:justify-center grid grid-cols-2 w-full" >
 
     <div class="md:flex md:justify-between  p-2 md:w-[90%] w-screen">
 
-        <h1 class=" font-bold p-2 w-[150px] text-xl">
+        <h1 class=" font-bold p-2 w-[150px] text-xl">         
             SALA DE TÉ 
             <span class="text-orange-700 ">LA ROMANA</span>
       </h1>
 
         <ul class=" flex md:gap-20 gap-5  justify-evenly md:justify-center  items-center font-bold text-xs md:text-sm text-orange-700">
 
-            <a href="#" class="p-2 border-b-2 border-white hover:text-black  hover:border-b-black duration-200 ">
+            <a href="#" class=" flex gap-2 items-center p-2 border-b-2 border-white hover:text-black  hover:border-b-black duration-200 ">
+                <Icon name="nosotros" class='w-8 h-6'/>
                 <li > SOBRE NOSOTROS</li>
             </a>
 
@@ -18,8 +22,10 @@
                 <li>PRODUCTOS</li>
             </a>
 
-            <a href="#"class=" bg-orange-900 p-2 border-b-2 border-white text-white rounded-xl duration-200 hover:bg-orange-800  ">
-                <li>CONTACTO</li>
+            <a href="#"class=" flex gap-2 items-center bg-orange-900 p-2 border-b-2 border-white text-white rounded-xl duration-200 hover:bg-orange-800  ">
+               
+                <li> CONTACTO</li>
+                <Icon name="contacto" class='w-8 h-6'/>
             </a>
         </ul>
 

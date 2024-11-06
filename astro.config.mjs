@@ -6,5 +6,13 @@ import icon from 'astro-icon';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), icon()]
+  integrations: [
+    tailwind(),
+    //establecemos ruta para iconos
+    icon({
+      sets: {
+        local: 'src/icons', 
+      },
+    }),
+  ],
 });
