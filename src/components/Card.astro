@@ -11,9 +11,9 @@ interface Props {
 
 const { bgColor, icon, title, text } = Astro.props;
 ---
-
-<div class={`flex flex-col items-start gap-4 w-72 px-10 py-10 border shadow-xl rounded-xl ${bgColor} text-gray-800`}>
+<!--pasamos como props el icons el color de fondo, el titulo y el text -->
+<div class={`flex flex-col items-start gap-4 w-72 h-72 px-10 py-10 border shadow-xl rounded-xl ${bgColor} text-gray-800`}>
     <Icon name={icon} class="w-8 h-8" />
-    <h3 class="text-xl font-bold">{title}</h3>
+    <h3 class="text-xl font-bold w-32 text-white" >{title}</h3>
     <p>{text}</p>
 </div>

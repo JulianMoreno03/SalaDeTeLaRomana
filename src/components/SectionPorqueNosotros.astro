@@ -1,41 +1,39 @@
 ---
-import { Icon } from 'astro-icon/components'
-
+import { Icon } from "astro-icon/components";
+import Card from "../components/Card.astro";
 ---
 
-<section class="w-full h-screen  ">
+<section class="w-full h-screen">
     <article class="flex flex-col items-center justify-center">
-        <h2 class="text-center font-bold text-2xl text-orange-700">¿Por qué elegirnos a nosotros?</h2>
+        <h2 class="text-center font-bold text-2xl text-orange-700">
+            ¿Por qué elegirnos a nosotros?
+        </h2>
         <p class="text-center w-96">
-            Lorem ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur
-            ipsum dolor sit amet consectetur adipisicing elit. Ipsum, nisi?
+            Lorem ipsum dolor sit amet consectetur ipsum dolor sit amet
+            consectetur ipsum dolor sit amet consectetur adipisicing elit.
+            Ipsum, nisi?
         </p>
-    
     </article>
-   
-    <article class="w-full flex items-center justify-center gap-10 mt-20 ">
-        <div class="flex flex-col items-start gap-4 w-72  px-10 py-10 border shadow-xl rounded-xl
-         bg-orange-400 text-gray-800">
-        
-            <Icon name="map" class='w-8 h-8'/>
-            <h3 class="text-xl font-bold">Ubicacion Accesible</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.</p>
-        </div>
 
-        <div class="flex flex-col items-start gap-4 w-72  px-10 py-10 border shadow-xl rounded-xl
-        bg-violet-400 text-gray-800">
-            
-            <Icon name="personal" class='ml-3 w-8 h-6'/>
-            <h3>Personal Capacitado</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.</p>
-        </div>
-
-        <div class="flex flex-col items-start gap-4 w-72  px-10 py-10 border shadow-xl rounded-xl
-        bg-red-400 text-gray-800">
-            
-            <Icon name="personalizado" class='ml-3 w-8 h-6'/>
-            <h3>Paquetes Personalizados</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.</p>
-        </div>
+    <article class="w-full flex items-center justify-center gap-10 mt-20">    
+    <!--Mandamos a llamar el componente card y pasamos las props correspondientes -->
+        <Card
+            bgColor="bg-orange-400"
+            icon="map"
+            title="Ubicación Accesible"
+            text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos."
+        />
+        <Card
+            bgColor="bg-violet-400"
+            icon="personal"
+            title="Personal Capacitado"
+            text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos."
+        />
+        <Card
+            bgColor="bg-red-400"
+            icon="personalizado"
+            title="Paquetes Personalizados"
+            text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos."
+        />
     </article>
 </section>
