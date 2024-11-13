@@ -15,25 +15,35 @@ import Card from "../components/Card.astro";
         </p>
     </article>
 
-    <article class="w-full flex flex-wrap items-center justify-center gap-10 mt-20">    
+    <article class="w-full flex flex-wrap items-center justify-center gap-24 mt-20">    
     <!--Mandamos a llamar el componente card y pasamos las props correspondientes -->
         <Card
             bgColor="bg-orange-400"
+            bgColorBtn="bg-orange-600"
             icon="map"
             title="Ubicación Accesible"
             text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos."
+            btnText="ENCUENTRANOS"
+            link="address"
+            
         />
         <Card
             bgColor="bg-violet-400"
+             bgColorBtn="bg-violet-500"
             icon="personal"
             title="Personal Capacitado"
             text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos."
+            btnText="MAS INFORMACION"
+            link="address"
         />
         <Card
             bgColor="bg-red-400"
+            bgColorBtn="bg-red-500"
             icon="personalizado"
             title="Paquetes Personalizados"
             text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos."
+            btnText="VER MAS"
+            link="address"
         />
     </article>
 </section>
