@@ -4,7 +4,7 @@ import L from 'leaflet';
 
 // Crear un ícono personalizado utilizando tu imagen local
 const customIcon = new L.Icon({
-  iconUrl: '/src/icons/map.svg',  // Ajusta la ruta a la de tu proyecto
+  iconUrl: 'map.svg',  // Ajusta la ruta a la de tu proyecto
   iconSize: [40, 50],  // Ajusta el tamaño según necesites
   iconAnchor: [20, 30],  // Ajusta el punto de anclaje (centro inferior del ícono)
   popupAnchor: [0, -30],  // Posición del popup respecto al ícono
