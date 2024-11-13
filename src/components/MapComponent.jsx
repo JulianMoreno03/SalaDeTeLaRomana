@@ -14,7 +14,7 @@ export default function MapContainerComponent() {
   const position = [13.7083973, -89.2061803];
 
   return (
-    <MapContainer center={position} zoom={18} scrollWheelZoom={false} style={{ height: '500px', width: '100%' }}>
+    <MapContainer center={position} zoom={17} scrollWheelZoom={false} className="md:w-[50%] md:h-[80%] w-[90%] h-[55%]  rounded-2xl shadow-2xl shadow-orange-900 ">
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
