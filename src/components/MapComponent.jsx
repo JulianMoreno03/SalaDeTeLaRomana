@@ -21,7 +21,7 @@ export default function MapContainerComponent() {
       />
       <Marker position={position} icon={customIcon}>
         <Popup>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, facilis!
+        Calle Gabriela Mistral #203,atras del Colegio Guadalupano,San Salvador, San Salvador, El Salvador
         </Popup>
       </Marker>
     </MapContainer>

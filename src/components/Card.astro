@@ -16,7 +16,7 @@ const { bgColor, icon, title, text, btnText, link, bgColorBtn } = Astro.props;
 ---
 <!--pasamos como props el icons el color de fondo, el titulo, el text, el link y el color del boton -->
 <div class={`flex flex-col items-start gap-4 w-72 h-80 px-10 py-10 border shadow-xl rounded-xl ${bgColor} text-gray-800`}>
-    <Icon name={icon} class="w-8 h-8 scale-150 bfg-" />
+    <Icon name={icon} class="w-8 h-8 scale-150 " />
     <h3 class="text-xl font-bold w-32 text-white" >{title}</h3>
     <p class="text-bold text-black">{text}</p>
     <a href={link} class={`text-center py-2 w-full rounded-sm shadow-sm shad shadow-slate-800 ${bgColorBtn} text-white hover:border-white hover:rounded-2xl duration-300`}>{btnText}</a>

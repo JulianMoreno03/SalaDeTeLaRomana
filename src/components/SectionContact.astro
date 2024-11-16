@@ -1,0 +1,31 @@
+---
+import { Icon } from "astro-icon/components";
+import CardContact from "../components/CardContact.astro";
+---
+
+<section class="w-full h-screen flex justify-center items-center flex-wrap">
+    <article class="w-[90%] md:h-screen flex justify-around md:items-center flex-wrap gap-10">
+        <!--Mandamos a llamar el componente card y pasamos las props correspondientes para contacto -->
+        <CardContact
+            bgColor="bg-emerald-700"
+            icon="phone"
+            title="NUMERO TELEFONICO"
+            text="Puedes llamarnos al siguiente numero: "
+            text02="+503 2226 1578"
+        />
+        <CardContact
+            bgColor="bg-cyan-700"
+            icon="mail"
+            title="CORREO ELECTRONICO"
+            text="Puedes mandarnos un correo a la siguiente direccion "
+            text02="laromana256@gmail.com"
+        />
+        <CardContact
+            bgColor="bg-blue-700"
+            icon="mapWhite"
+            title="UBICACION LOCAL"
+            text="Puedes preguntar en nuestra sucursal situada en:  "
+            text02="Calle Gabriela Mistral #203 San Salvador, El Salvador"
+        />
+    </article>
+</section>
