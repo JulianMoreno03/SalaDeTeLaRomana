@@ -4,10 +4,11 @@ import MapComponent from '../Map/MapComponent';
 ---
 
 <section class="m-4">
-    <article class="flex flex-col items-center gap-3">
-        <h2 class="text-center font-bold text-2xl text-orange-700">!ENCUENTRAMOS FACILMENTE!</h2>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, voluptatem!</p>
+    <article class="flex flex-col items-center gap-3 text-center font-bold text-2xl text-orange-700">
+        <h2 class="text-center font-bold text-2xl ">!ENCUENTRAMOS FACILMENTE!</h2>
+        <p class="text-xl">ESTAMOS UBICADOS EN :</p>
+        <p class="text-xl w-[500px] text-orange-950" >Calle Gabriela Mistral #203, atras del Colegio Guadalupano,San Salvador, San Salvador, El Salvador
+        </p>
     </article>
     <article class="flex justify-center md:mt-5 mt-2 w-full h-screen">
         <MapComponent client:only="react" ></MapComponent>
