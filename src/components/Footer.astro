@@ -1,7 +1,38 @@
 ---
+import { Icon } from 'astro-icon/components'
+import { Image } from "astro:assets";
+
 ---
-
-
-<section>
-    <article></article>
-</section>
+<section class="w-full bg-slate-300 py-10 mt-20">
+    <article class="container mx-auto px-4 flex flex-wrap justify-center md:justify-between items-center space-y-6 md:space-y-0">
+      <!-- Logo y Nombre -->
+      <div class="flex flex-col items-center text-center">
+        <Icon name="Logo" class="w-16 h-16 md:w-20 md:h-20 mb-3" aria-hidden="true" />
+        <h3 class="text-lg font-bold">SALA DE TÉ LA ROMANA</h3>
+      </div>
+  
+      <!-- Sección de Contacto -->
+      <div class="text-center md:text-left">
+        <h3 class="text-lg font-bold mb-3">Contáctanos</h3>
+        <ul class="space-y-2">
+          <li>Teléfono: <a href="tel:+1234567890" class="text-blue-600">+503 2226 1578</a></li>
+          <li>Email: <a href="mailto:info@tealaromana.com" class="text-blue-600">laromana256@gmail.com</a></li>
+          <li>Calle Gabriela Mistral #203, San Salvador, San Salvador, El Salvador</li>
+        </ul>
+      </div>
+  
+      <!-- Redes Sociales -->
+      <div class="flex flex-col items-center">
+        <h3 class="text-lg font-bold mb-3">Búscanos en:</h3>
+        <a href="https://www.facebook.com/profile.php?id=100042064482523&locale=es_LA" target="_blank" aria-label="Facebook" class="flex items-center space-x-2">
+          <Icon name="facebook" class="w-6 h-6 text-blue-600" />
+          <span class="text-blue-600">Facebook</span>
+        </a>
+      </div>
+    </article>
+  
+    <div class="text-center mt-8 border-t border-gray-400 pt-5">
+      <p class="text-sm text-gray-600">&copy; 2024 Sala de Té La Romana. Todos los derechos reservados.</p>
+    </div>
+  </section>
+  
