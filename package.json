@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/react": "^3.6.2",
     "@astrojs/tailwind": "^5.1.2",
+    "@fontsource-variable/oswald": "^5.1.0",
     "astro": "^4.16.8",
     "astro-icon": "^1.1.2",
     "leaflet": "^1.9.4",
