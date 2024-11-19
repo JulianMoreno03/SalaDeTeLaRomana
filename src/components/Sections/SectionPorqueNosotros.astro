@@ -3,15 +3,18 @@ import { Icon } from "astro-icon/components";
 import Card from "../Cards/Card.astro";
 ---
 
-<section class="w-full h-full mb-10 "> 
+<section class="w-full h-full mb-10 z-10"
+id="PorqueNosotros"> 
     <article class="flex flex-col items-center justify-center">
         <h2 class="text-center font-bold text-2xl text-orange-700">
             ¿Por qué elegirnos a nosotros?
         </h2>
-        <p class="text-center w-80 md:w-96 pt-5">
-            Lorem ipsum dolor sit amet consectetur ipsum dolor sit amet
-            consectetur ipsum dolor sit amet consectetur adipisicing elit.
-            Ipsum, nisi?
+        <p class="text-center w-80 md:w-[400px] pt-5 ">
+            tu evento será gestionado con la máxima dedicación y cuidado, 
+            brindando a tus invitados una experiencia memorable y única,  por lo que aquí te mostramos
+            <span class="text-orange-700 font-bold">
+                algunas razones para elegirnos a nosotros :
+            </span>
         </p>
     </article>
 
@@ -22,7 +25,7 @@ import Card from "../Cards/Card.astro";
             bgColorBtn="bg-orange-600"
             icon="map"
             title="Ubicación Accesible"
-            text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos."
+            text="Nuestra ubicacion nos permite brindar un ambiente accesible y cómodo para todos los asistentes."
             btnText="ENCUENTRANOS"
             link="address"
             
@@ -32,17 +35,16 @@ import Card from "../Cards/Card.astro";
             bgColorBtn="bg-indigo-700"
             icon="personal"
             title="Personal Capacitado"
-            text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos."
+            text="Nuestro equipo está comprometido en ofrecer un servicio de calidad en cada evento"
             btnText="MAS INFORMACION"
-            link="#"
+            link="contact"
         />
         <Card
         bgColor="bg-gradient-to-b from-red-700/80 to-red-500/80"
-
             bgColorBtn="bg-red-600"
             icon="personalizado"
             title="Paquetes Personalizados"
-            text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos."
+            text="Ofrecemos paquetes personalizados para cada una de esos eventos especiales."
             btnText="VER MAS"
             link="#"
         />
