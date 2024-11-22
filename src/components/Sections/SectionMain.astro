@@ -2,10 +2,11 @@
 import { Image } from "astro:assets";
 import imgBackground from "../../../public/imgFondo.webp";
 import { Icon } from 'astro-icon/components'
-
+import '@fontsource/roboto';
+import '@fontsource-variable/oswald';
 ---
 
-<section class="relative w-full md:h-screen h-72 overflow-hidden">
+<section class="relative w-full md:h-screen h-64 overflow-hidden flex flex-col justify-center ">
     <Image
         src={imgBackground}   
         decoding="async"
@@ -21,15 +22,15 @@ import { Icon } from 'astro-icon/components'
             class="flex flex-col justify-center items-center md:gap-6 gap-3
         bg-white bg-opacity-20 backdrop-blur-xl  md:w-96 md:h-64 h-52 rounded-xl md:p-5"
         >
-            <p class="text-center w-[250px] text-sm md:text-xl  text-orange-900 font-bold">
+            <p class="font-Oswald text-center w-[230px] text-sm md:text-xl  text-orange-900 font-bold">
                 QUE TU FIESTA SEA
                 <span class="text-2xl md:text-4xl">INOLVIDABLE</span>
             </p>
-            <p class="text-center text-lg md:text-xl w-48 md:w-[220px]  text-orange-950 font-bold">
+            <p class="font-roboto text-center text-lg md:text-xl w-48 md:w-[220px]  text-orange-950 font-bold">
                 El lugar perfecto para esa fiesta soñada
             </p>
             <a href="contact"
-                class="flex  text-lg bg-orange-900 px-3 py-2 md:px-6 md:py-3 font-bold text-white rounded-xl hover:bg-orange-800 duration-300"
+                class="font-Oswald flex text-lg bg-orange-900 px-3 py-2 md:px-6 md:py-3 font-bold text-white rounded-xl hover:bg-orange-800 duration-300"
                 >CONTACTANOS
                 <Icon name="contacto" class='ml-3 w-8 h-6'/>
             </a>

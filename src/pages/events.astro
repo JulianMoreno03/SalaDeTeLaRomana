@@ -1,13 +1,10 @@
 ---
+
 import Header from '../components/Header.astro';
-import MainContact from '../components/Sections/Contact/MainContact.astro';
-import MapContainer from '../components/Map/MapContainer.astro';
-
 import Footer from '../components/Footer.astro';
-import SectionContact from '../components/Sections/Contact/SectionContact.astro';
+
+import SectionMainEvento from '../components/Sections/Evento/SectionMainEvento.astro';
 ---
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,15 +16,14 @@ import SectionContact from '../components/Sections/Contact/SectionContact.astro'
 		<link rel="icon" type="image/svg+xml" href="/Logo.svg" />
 		<meta name="generator" content={Astro.generator} />
 
-    <title>Contactanos</title>
+    <title>Eventos Realizados</title>
 </head>
 <body>
     <main>
         <Header></Header>
-        <MainContact></MainContact>
-        <SectionContact></SectionContact>
-        <MapContainer></MapContainer>
+        <SectionMainEvento></SectionMainEvento>
         <Footer></Footer>
     </main>
+    
 </body>
 </html>

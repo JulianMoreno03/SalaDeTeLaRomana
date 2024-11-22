@@ -1,6 +1,7 @@
 ---
 import { Icon } from 'astro-icon/components'
 import '@fontsource-variable/oswald';
+import '@fontsource/roboto';
 ---
 <header class="md:flex md:justify-center w-full">
     <div class="md:flex md:justify-between p-2 md:w-[90%] w-full">
@@ -11,7 +12,7 @@ import '@fontsource-variable/oswald';
             </h1>
         </a>
 
-        <ul class=" font-sans  flex md:gap-20 gap-5 justify-center items-center font-bold text-xs md:text-sm text-orange-700">
+        <ul class=" font-Oswald w-full flex md:gap-20 gap-5 justify-between md:justify-end items-center font-bold text-xs md:text-sm text-orange-700">
             <li>
                 <a href="../#sobreNosotros" class="flex gap-2 p-2 items-center border-2 border-white  hover:border-orange-700 rounded-2xl transition duration-200">
                     <Icon name="nosotros" class="w-8 h-6" aria-hidden="true"/>
@@ -19,14 +20,16 @@ import '@fontsource-variable/oswald';
                 </a>
             </li>
             <li>
-                <a href="#" class="p-2 border-2 border-white hover:border-orange-700 rounded-2xl transition duration-200">
-                    PRODUCTOS
+                <a href="events" class=" flex gap-2 p-2 items-center border-2 border-white hover:border-orange-700 rounded-2xl transition duration-200">
+                    <Icon name="nosotros" class="w-8 h-6" aria-hidden="true"/>
+                     EVENTOS
                 </a>
             </li>
             <li>
                 <a href="contact" class="flex gap-2 items-center bg-orange-900 p-2 border-b-2 border-white text-white rounded-xl transition duration-200 hover:bg-orange-800">
-                    CONTACTO
                     <Icon name="contacto" class="w-8 h-6" aria-hidden="true"/>
+                    CONTACTO
+                  
                 </a>
             </li>
         </ul>

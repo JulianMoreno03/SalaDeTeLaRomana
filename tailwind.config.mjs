@@ -7,6 +7,7 @@ export default {
     extend: {
       fontFamily: {
         Oswald: ['Oswald Variable', ...defaultTheme.fontFamily.sans],
+        roboto: ['roboto', ...defaultTheme.fontFamily.sans],
       },
     },
   },
