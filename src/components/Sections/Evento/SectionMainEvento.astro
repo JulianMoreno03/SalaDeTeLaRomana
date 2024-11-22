@@ -4,25 +4,32 @@ import '@fontsource-variable/oswald';
 import '@fontsource/roboto';
 ---
 
-<article class="w-full h-screen flex flex-col justify-center items-center">
+<article class="w-full h-full flex flex-col justify-center items-center p-10">
   
-    <h3 class="text-4xl font-bold text-center mb-10 font-Oswald text-orange-800 ">EVENTOS REALIZADOS</h3>
 
-  <section class="grid grid-cols-2 w-[50%] h-[65%] gap-4 justify-items-center items-center shadow-2xl rounded-xl">
+  <h3 class="text-3xl sm:text-4xl font-bold text-center font-Oswald text-orange-800">
+    EVENTOS REALIZADOS
+  </h3>
+
+  <section class="grid grid-cols-1 sm:grid-cols-2 md:w-[55%] max-w-4xl h-auto gap-10 p-4 sm:p-10 items-center shadow-2xl rounded-xl">
+
     <video 
-    class="w-[300px] h-[300px] rounded-lg shadow-lg object-cover" 
-     preload="metadata" muted autoplay loop>
-    <source src={videoSrc} type="video/mp4" />
-    Tu navegador no soporta la reproducción de videos.
-  </video>
+      class=" w-[450px] h-[250px]  rounded-lg shadow-lg object-cover" 
+      preload="metadata" muted autoplay loop>
+      <source src={videoSrc} type="video/mp4" />
+      Tu navegador no soporta la reproducción de videos.
+    </video>
     
-    <div class="p-10 flex flex-col justify-evenly  gap-10">
-      <p class="font-roboto text-justify">
+    <div class="flex flex-col justify-evenly gap-10">
+      <p class="font-roboto text-justify text-sm sm:text-base">
         En sala de té La Romana nos encanta atenderte de lo mejor, por eso en este apartado podrás ver un poco
         de nuestro grandioso trabajo.
       </p>
-      <a href="contact" class="p-3 text-xl bg-orange-700 text-white font-Oswald rounded-lg shadow-xl
-      text-center hover:bg-orange-600 duration-300">CONTACTANOS</a>
+      <a 
+        href="contact" 
+        class="p-3 text-sm sm:text-lg bg-orange-700 text-white font-Oswald rounded-lg shadow-xl text-center hover:bg-orange-600 duration-300">
+        CONTACTANOS
+      </a>
     </div>
   </section>
 </article>
