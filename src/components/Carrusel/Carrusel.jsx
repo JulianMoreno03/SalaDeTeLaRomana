@@ -14,8 +14,8 @@ const Carousel = () => {
 
   return (
     <Swiper
-      spaceBetween={50} 
-      slidesPerView={2} 
+      spaceBetween={1} 
+      slidesPerView={1} 
       loop={images.length > 1}
       pagination={{ clickable: true }}
       modules={[Pagination]} 
@@ -25,7 +25,7 @@ const Carousel = () => {
           <img 
             src={src} 
             alt={`Slide ${index + 1}`} 
-            className=" w-[250px] h-[300px] md:w-full md:h-[450px] object-cover rounded-lg "  
+            className=" w-full h-[300px] md:w-full md:h-[450px] object-cover rounded-lg "  
           />
         </SwiperSlide>
       ))}
