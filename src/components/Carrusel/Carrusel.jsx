@@ -1,8 +1,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Autoplay } from 'swiper/modules'; 
+import { Pagination, Autoplay, Navigation} from 'swiper/modules'; 
 import 'swiper/css';
 import 'swiper/css/pagination'; 
-
+import 'swiper/css/navigation';
 const Carousel = () => {
   const images = [
     '/ImgSlide02.webp',
@@ -18,7 +18,12 @@ const Carousel = () => {
       slidesPerView={1} 
       loop={images.length > 1}
       pagination={{ clickable: true }}
-      modules={[Pagination]} 
+      navigation 
+      autoplay={{
+        delay: 3000, // Tiempo entre transiciones
+        disableOnInteraction: false, // Autoplay sigue después de interacción
+      }}
+      modules={[Pagination, Autoplay, Navigation]} 
     >
       {images.map((src, index) => (
         <SwiperSlide key={index}>
