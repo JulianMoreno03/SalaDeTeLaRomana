@@ -1,10 +1,19 @@
 ---
 import Carrusel from "../../Carrusel/Carrusel";
+
+//Url de img que se van a pasar como props al componente carrusel
+const images = [
+  '/ImgSlide02.webp',
+  '/ImgSlide01.webp',
+  '/ImgSlide03.webp',
+  '/ImgSlide04.webp',
+  '/ImgSlide05.webp',
+];
 ---
 
 <section class="md:flex flex-col md:justify-center md:items-center   ">
     <p class="font-roboto font-bold text-sm text-center text-orange-700">Desliza para poder ver mas imagenes de nuestros eventos</p>
     <article class="flex md:w-[50%] h-full shadow-2xl p-5">
-        <Carrusel client:only="react" ></Carrusel>
+        <Carrusel client:only="react" images={images} slidesPerView={1} />
     </article>
 </section>
