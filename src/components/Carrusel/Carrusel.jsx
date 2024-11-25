@@ -7,7 +7,7 @@ import 'swiper/css/navigation';
 const Carousel = ({ images, slidesPerView = 1 }) => {
   return (
     <Swiper
-      spaceBetween={1} 
+      spaceBetween={10} 
       slidesPerView={slidesPerView} 
       loop={images.length > 1}
       pagination={{ clickable: true }}

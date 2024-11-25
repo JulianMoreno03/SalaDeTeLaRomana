@@ -11,9 +11,19 @@ const images = [
 ];
 ---
 
-<section class="md:flex flex-col md:justify-center md:items-center   ">
-    <p class="font-roboto font-bold text-sm text-center text-orange-700">Desliza para poder ver mas imagenes de nuestros eventos</p>
-    <article class="flex md:w-[50%] h-full shadow-2xl p-5">
+<section class="md:flex flex-col md:justify-center md:items-center gap-10  ">
+    <p class="font-roboto font-bold text-sm text-center text-orange-700">
+        Desliza para poder ver mas imagenes de nuestros eventos</p>
+        <!--PRIMER CARRUSEL -->
+    <article class="flex md:w-[50%] h-full shadow-2xl p-5 rounded-xl">
         <Carrusel client:only="react" images={images} slidesPerView={1} />
+    </article>
+
+        <!--SEGUNDO CARRUSEL -->
+        <p class="font-roboto font-bold md:text-lg text-center text-orange-700 my-10">
+            Recuerda que celebramos bodas, baby showers, graduaciones, fiestas y todo tipo de eventos memorables</p>
+    <article class="flex md:w-[80%] h-full shadow-2xl p-5 rounded-xl">
+        
+        <Carrusel client:only="react" images={images} slidesPerView={2} />
     </article>
 </section>
