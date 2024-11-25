@@ -9,6 +9,15 @@ const images = [
   '/ImgSlide04.webp',
   '/ImgSlide05.webp',
 ];
+
+//Arreglo para el segundo carrusel
+const images02 = [
+  '/ImgSlide06.webp',
+  '/ImgSlide08.webp',
+  '/ImgSlide07.webp',
+  '/ImgSlide09.webp',
+  '/ImgSlide10.webp',
+];
 ---
 
 <section class="md:flex flex-col md:justify-center md:items-center gap-10  ">
@@ -24,6 +33,6 @@ const images = [
             Recuerda que celebramos bodas, baby showers, graduaciones, fiestas y todo tipo de eventos memorables</p>
     <article class="flex md:w-[80%] h-full shadow-2xl p-5 rounded-xl">
         
-        <Carrusel client:only="react" images={images} slidesPerView={2} />
+        <Carrusel client:only="react" images={images02} slidesPerView={2} />
     </article>
 </section>
