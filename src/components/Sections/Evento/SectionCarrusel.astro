@@ -1,4 +1,5 @@
 ---
+import { Icon } from 'astro-icon/components'
 import Carrusel from "../../Carrusel/Carrusel";
 
 //Url de img que se van a pasar como props al componente carrusel
@@ -21,8 +22,11 @@ const images02 = [
 ---
 
 <section class="md:flex flex-col md:justify-center md:items-center gap-10  ">
-    <p class="font-roboto font-bold text-sm text-center text-orange-700">
+    <p class=" flex w-full justify-center items-center font-roboto font-bold text-sm text-center text-orange-700">
+
         Desliza para poder ver mas imagenes de nuestros eventos</p>
+
+
         <!--PRIMER CARRUSEL -->
     <article class="flex md:w-[50%] h-full shadow-2xl p-5 rounded-xl">
         <Carrusel client:only="react" images={images} slidesPerView={1} />
