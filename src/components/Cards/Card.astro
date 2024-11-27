@@ -21,6 +21,6 @@ const { bgColor, icon, title, text, btnText, link, bgColorBtn } = Astro.props;
 <div class={`flex flex-col items-start gap-6 w-72 h-96 px-10 py-10 border shadow-xl rounded-xl ${bgColor} text-gray-800`}>
     <Icon name={icon} class="w-8 h-8  " />
     <h3 class="text-xl font-bold w-32 text-white font-Oswald" >{title}</h3>
-    <p class="font-roboto text-slate-900" >{text}</p>
+    <p class="font-roboto text-slate-900 " >{text}</p>
     <a href={link} class={` font-Oswald text-center py-2 w-full rounded-lg shadow-sm shad shadow-slate-800 ${bgColorBtn} text-white hover:border-white hover:rounded-2xl duration-300`}>{btnText}</a>
 </div>
