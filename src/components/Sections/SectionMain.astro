@@ -7,13 +7,14 @@ import '@fontsource-variable/oswald';
 ---
 
 <section class="relative w-full md:h-screen h-64 overflow-hidden flex flex-col justify-center ">
-    <Image
-        src={imgBackground}   
-        decoding="async"
-        loading="lazy"
-        alt="Foto de la decoración del lugar."
-        class="absolute top-0 left-0 object-cover bg-cover  "
-    />
+    <div class="relative w-full h-full">
+        <Image
+          src={imgBackground}
+          decoding="async"
+          loading="lazy"
+          alt="Foto de la decoración del lugar."
+          class="absolute object-cover bg-cover w-full h-full"
+        />
 
     <article
         class="absolute w-full md:h-screen h-72 flex justify-center md:justify-start items-center  p-10 md:pl-32"
